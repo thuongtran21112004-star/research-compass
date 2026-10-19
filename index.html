@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="Research Compass: bản đồ tư duy, thư viện bài báo và lộ trình nghiên cứu về soft gripper, contact-aware perception, reinforcement learning và sim-to-real.">
+  <title>Research Compass · Soft Gripper & Sim-to-Real</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="Về đầu trang Research Compass">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="16.5" stroke="currentColor"/><path d="M13 23L16.7 16.7 23 13 19.3 19.3 13 23Z" fill="currentColor"/><circle cx="18" cy="18" r="2.2" fill="#F6F8F5"/></svg></span>
+        <span class="brand-name">research<span class="brand-dot">.</span>compass</span>
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a href="#compass">Compass</a>
+        <a href="#directions">Directions</a>
+        <a href="#library">Paper library</a>
+        <a href="#gap">Research gap</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <a href="#library" class="header-link">Explore papers <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> AN OPEN RESEARCH NOTEBOOK <span class="eyebrow-line"></span> ROBOTICS / 01</div>
+        <p class="hero-overline">A map for thinking, not just a list of papers.</p>
+        <h1 id="hero-title">From <em>deformation</em><br>to intelligent<br>manipulation<span class="period">.</span></h1>
+        <p class="hero-description">Một không gian để theo dõi mình đang nghiên cứu điều gì, các bài báo đã đọc giải quyết được gì, <strong>khoảng trống nào còn tồn tại</strong> và thí nghiệm nào đáng làm tiếp.</p>
+        <div class="hero-actions">
+          <a href="#compass" class="button button-primary">Khám phá hướng nghiên cứu <span aria-hidden="true">↗</span></a>
+          <a href="#library" class="button button-secondary">Xem paper notes <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-meta"><span><span class="meta-square"></span> SOFT ROBOTICS</span><span> / </span><span>REINFORCEMENT LEARNING</span><span> / </span><span>SIM-TO-REAL</span></div>
+      </div>
+      <div class="hero-illustration" aria-label="Hình minh họa khái niệm ngón gắp mềm, biến dạng và đường cong quan sát được">
+        <div class="illustration-top"><span>FIG. 01 — SYSTEM CONCEPT</span><span class="fig-cross">＋</span></div>
+        <svg viewBox="0 0 480 505" role="img" aria-label="Sơ đồ minh họa hai ngón gắp mềm, đường cong biến dạng và vật thể" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M 24 0 L 0 0 0 24" fill="none" stroke="#dce7e1" stroke-width=".8"/></pattern>
+            <linearGradient id="finger" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cee9e0"/><stop offset="1" stop-color="#80b6a5"/></linearGradient>
+          </defs>
+          <rect width="480" height="505" fill="url(#grid)"/>
+          <g stroke="#a9bdb9" stroke-width="1.2" fill="none" opacity=".9"><path d="M40 70h20m-10-10v20M420 70h20m-10-10v20M40 422h20m-10-10v20M420 422h20m-10-10v20"/></g>
+          <g opacity=".92"><path d="M120 80 Q131 64 148 75 L183 108 Q193 118 196 137 L218 283 Q218 299 209 311 L188 325 Q170 334 158 316 L144 281 Q138 263 140 245 L141 154 L117 107 Q110 94 120 80Z" fill="url(#finger)" stroke="#4e9c8f" stroke-width="2"/><path d="M360 80 Q349 64 332 75 L297 108 Q287 118 284 137 L262 283 Q262 299 271 311 L292 325 Q310 334 322 316 L336 281 Q342 263 340 245 L339 154 L363 107 Q370 94 360 80Z" fill="url(#finger)" stroke="#4e9c8f" stroke-width="2"/></g>
+          <g fill="none" stroke="#276f6d" stroke-width="3" stroke-dasharray="7 7" stroke-linecap="round"><path d="M148 97 C153 137 177 176 177 224 C177 257 185 283 191 304"/><path d="M332 97 C327 137 303 176 303 224 C303 257 295 283 289 304"/></g>
+          <g stroke="#155d60" stroke-width="1.3" opacity=".25"><path d="M148 124l35 6m-33 24 41 6m-41 28 45 8m-43 29 47 11m-43 26 52 12m-46 21 48 14M332 124l-35 6m33 24-41 6m41 28-45 8m43 29-47 11m43 26-52 12m46 21-48 14"/></g>
+          <rect x="198" y="204" width="84" height="94" rx="19" fill="#e9bc79" fill-opacity=".45" stroke="#b47e3a" stroke-width="2" transform="rotate(4 240 251)"/>
+          <g fill="none" stroke="#e0a658" stroke-width="1.8"><path d="M224 211q18-18 37-2M228 297q18 12 35 0"/></g>
+          <g stroke="#b08352" fill="none" stroke-width="1.3" stroke-dasharray="4 5"><path d="M240 176v-72"/><path d="M240 321v66"/></g>
+          <circle cx="240" cy="251" r="5" fill="#b47e3a"/>
+          <g stroke="#5f847f" stroke-width="1.2" fill="none"><path d="M155 194H76V165"/><path d="M302 275h96v-26"/><path d="M240 251h-68v104h-68"/></g>
+          <g fill="#174e50" font-family="Arial, sans-serif" font-size="11" letter-spacing="1.2"><text x="43" y="158">CONTOUR</text><text x="357" y="243">CONTACT</text><text x="49" y="371">SIGNAL</text></g>
+          <g transform="translate(112 430)" fill="none"><path d="M0 18h256" stroke="#acbfba" stroke-dasharray="3 6"/><path d="M0 18Q28-4 53 13T105 16T158 8T209 20T256 13" stroke="#317d76" stroke-width="2.5"/><circle cx="53" cy="13" r="4.5" fill="#317d76"/><circle cx="158" cy="8" r="4.5" fill="#317d76"/></g>
+        </svg>
+        <div class="illustration-caption"><span>Internal contour <span class="caption-arrow">↗</span> control signal?</span><span>CONCEPTUAL / NOT TO SCALE</span></div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Giới thiệu bản đồ nghiên cứu">
+      <div class="shell stats-inner">
+        <div><strong>01</strong><span>Central question</span></div>
+        <div><strong>04</strong><span>Research directions</span></div>
+        <div><strong id="paper-stat">04</strong><span>Starter references</span></div>
+        <div class="stats-statement"><span class="mini-spark">✳</span><span>Connect papers → find gaps → design experiments.</span></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="compass" aria-labelledby="compass-title">
+      <div class="section-heading"><div><span class="section-kicker">01 / THE NORTH STAR</span><h2 id="compass-title">Research <em>Compass</em></h2></div><p>Kim chỉ nam giúp mọi quyết định nghiên cứu quay về một câu hỏi trung tâm.</p></div>
+      <div class="compass-layout">
+        <div class="north-star-card">
+          <span class="card-mini-heading"><span class="star-symbol">✳</span> CENTRAL RESEARCH QUESTION</span>
+          <h3>Liệu <mark>biến dạng bên trong ngón gắp mềm</mark> có thể trở thành tín hiệu quan sát đủ hữu ích để điều khiển gắp và chuyển chính sách học trong mô phỏng sang robot thật?</h3>
+          <div class="question-caption"><span>Working hypothesis — chưa được kiểm chứng</span><span>RQ / 001</span></div>
+        </div>
+        <div class="research-questions">
+          <div class="rq-item"><span>RQ.01</span><div><h4>Mechanics</h4><p>Mô phỏng sự biến dạng và tương tác tiếp xúc của TPU 95A đến mức nào là đủ?</p></div><span class="rq-arrow">↗</span></div>
+          <div class="rq-item"><span>RQ.02</span><div><h4>Observation</h4><p>Camera nhìn đường viền bên trong có cung cấp thông tin liên quan đến tiếp xúc mà không cần nhìn trực tiếp vật thể?</p></div><span class="rq-arrow">↗</span></div>
+          <div class="rq-item"><span>RQ.03</span><div><h4>Policy transfer</h4><p>Làm thế nào để quan sát trong simulation và robot thật đủ tương thích cho RL và sim-to-real?</p></div><span class="rq-arrow">↗</span></div>
+        </div>
+      </div>
+      <p class="note-disclaimer">Các câu hỏi trên là đề xuất tổ chức ý tưởng từ quá trình thảo luận, không phải kết luận nghiên cứu hay khẳng định tính mới.</p>
+    </section>
+
+    <section class="section section-shaded" id="directions" aria-labelledby="directions-title">
+      <div class="shell">
+        <div class="section-heading"><div><span class="section-kicker">02 / RESEARCH DIRECTIONS</span><h2 id="directions-title">Four connected <em>threads</em></h2></div><p>Bốn nhánh liên kết với nhau thành một pipeline có thể thử nghiệm từng phần.</p></div>
+        <div class="threads-grid">
+          <article class="thread-card"><span class="thread-num">01 <span>／</span> PHYSICS</span><div class="thread-glyph" aria-hidden="true"><svg viewBox="0 0 82 72"><path d="M9 52c12-43 24-43 35-5S67 78 74 17" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M9 52c12-43 24-43 35-5S67 78 74 17" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="3 6" transform="translate(0,-10)" opacity=".5"/><circle cx="44" cy="47" r="4" fill="currentColor"/></svg></div><h3>Deformable<br>mechanics</h3><p>Tiếp xúc, độ mềm, vật liệu TPU 95A, mô hình flex trong MuJoCo và sai số mô phỏng.</p><div class="thread-tags"><span>Contact</span><span>FEM / Flex</span></div></article>
+          <article class="thread-card"><span class="thread-num">02 <span>／</span> PERCEPTION</span><div class="thread-glyph" aria-hidden="true"><svg viewBox="0 0 82 72"><path d="M8 36C21 14 60 14 74 36 60 58 21 58 8 36Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="41" cy="36" r="12" stroke="currentColor" fill="none" stroke-width="2"/><path d="M29 36Q39 19 53 37" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="3 4"/><circle cx="41" cy="36" r="3" fill="currentColor"/></svg></div><h3>Deformation<br>perception</h3><p>Từ hình ảnh đường viền bên trong đến một representation chứa tín hiệu biến dạng.</p><div class="thread-tags"><span>Vision</span><span>Contour</span></div></article>
+          <article class="thread-card"><span class="thread-num">03 <span>／</span> LEARNING</span><div class="thread-glyph" aria-hidden="true"><svg viewBox="0 0 82 72"><circle cx="14" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="56" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="43" cy="36" r="7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="71" cy="14" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="71" cy="58" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m19 18 18 14M19 54l18-14m13-8 16-15M50 40l16 15" stroke="currentColor" stroke-width="2"/></svg></div><h3>Reinforcement<br>learning</h3><p>Thiết kế observation, action, reward và huấn luyện chính sách gắp trong simulation.</p><div class="thread-tags"><span>RL Policy</span><span>Observation</span></div></article>
+          <article class="thread-card"><span class="thread-num">04 <span>／</span> TRANSFER</span><div class="thread-glyph" aria-hidden="true"><svg viewBox="0 0 82 72"><rect x="4" y="16" width="27" height="40" rx="6" stroke="currentColor" stroke-width="2" fill="none"/><rect x="51" y="16" width="27" height="40" rx="6" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 27h12m-12 8h8m-8 8h12M59 27h12m-12 8h8m-8 8h12M33 36h16m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></div><h3>Sim-to-real<br>adaptation</h3><p>Đánh giá reality gap, khả năng chuyển giao và các hướng online correction / adaptation.</p><div class="thread-tags"><span>Domain gap</span><span>Adaptation</span></div></article>
+        </div>
+        <div class="pipeline"><span>RESEARCH PIPELINE</span><div class="pipeline-line"><b>Physical prototype</b><i>→</i><b>Simulated contour</b><i>→</i><b>RL policy</b><i>→</i><b>Real-world evaluation</b></div></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="library" aria-labelledby="library-title">
+      <div class="section-heading"><div><span class="section-kicker">03 / READING WITH PURPOSE</span><h2 id="library-title">Paper <em>Library</em></h2></div><p>Không chỉ “đã đọc gì”, mà còn “học được gì” và “nó thay đổi quyết định nghiên cứu thế nào”.</p></div>
+      <div class="library-toolbar">
+        <div class="filter-list" id="paper-filters" role="group" aria-label="Lọc bài báo theo chủ đề"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All notes</button><button type="button" class="filter" data-filter="tactile" aria-pressed="false">Tactile</button><button type="button" class="filter" data-filter="sim2real" aria-pressed="false">Sim-to-Real</button><button type="button" class="filter" data-filter="adaptation" aria-pressed="false">Adaptation</button><button type="button" class="filter" data-filter="simulation" aria-pressed="false">Simulation</button></div>
+        <label class="search-box"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.7" cy="10.7" r="6.6"/><path d="m15.7 15.7 5 5"/></svg><span class="sr-only">Tìm tài liệu</span><input id="paper-search" type="search" placeholder="Tìm paper hoặc khái niệm…" autocomplete="off"></label>
+      </div>
+      <div class="library-info"><span>CURATED REFERENCES <span class="info-line"></span> <span id="paper-count">04</span> ITEMS</span><span>Click “Xem ghi chú” để hiểu liên hệ với hướng nghiên cứu ↘</span></div>
+      <div class="papers-grid" id="paper-grid" aria-live="polite"></div>
+      <p class="note-disclaimer">Các ghi chú trong bản mẫu là phần tổng hợp định hướng ban đầu để bạn sửa theo quá trình đọc paper thực tế; không phải trích dẫn nguyên văn hay kết quả thí nghiệm của bạn.</p>
+    </section>
+
+    <section class="section section-gap" id="gap" aria-labelledby="gap-title">
+      <div class="shell">
+        <div class="section-heading section-heading-dark"><div><span class="section-kicker">04 / THE OPEN PROBLEM</span><h2 id="gap-title">Finding the <em>research gap</em></h2></div><p>Một research gap tốt không chỉ là “chưa ai làm”, mà phải dẫn tới giả thuyết và cách kiểm chứng rõ ràng.</p></div>
+        <div class="gap-flow">
+          <article class="gap-block"><div class="gap-step">01 <span>/ EXISTING WORK</span></div><h3>What we learned</h3><p>Tactile RL cho thấy tiềm năng của tactile observations. TRANSIC nghiên cứu online corrections để giảm sim-to-real gap. RMA² khai thác lịch sử quan sát để thích nghi.</p></article>
+          <div class="gap-connector" aria-hidden="true">→</div>
+          <article class="gap-block"><div class="gap-step">02 <span>/ OPEN QUESTION</span></div><h3>What is still unclear</h3><p>Liệu chỉ một camera quan sát đường viền biến dạng trong gripper mềm có cung cấp đủ thông tin để học và chuyển giao chính sách trong bài toán gắp cụ thể?</p></article>
+          <div class="gap-connector" aria-hidden="true">→</div>
+          <article class="gap-block gap-highlight"><div class="gap-step">03 <span>/ TESTABLE IDEA</span></div><h3>What to investigate</h3><p>So sánh chính sách sử dụng contour-based observation với baseline khác, trong các điều kiện contact và vật thể thay đổi, ở cả sim và real.</p></article>
+        </div>
+        <div class="gap-footer"><span>⚑</span><p><strong>Working hypothesis.</strong> Đây là hướng đặt vấn đề cần literature review và thực nghiệm để xác định tính mới, mức độ khả thi và giới hạn.</p></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="section-heading"><div><span class="section-kicker">05 / FROM IDEA TO EXPERIMENT</span><h2 id="roadmap-title">Research <em>Roadmap</em></h2></div><p>Lộ trình đề xuất theo các điều kiện tiên quyết, không gán tiến độ giả cho nghiên cứu của bạn.</p></div>
+      <div class="roadmap-list">
+        <div class="roadmap-item"><span class="roadmap-index">01</span><div><span class="roadmap-label">FOUNDATION</span><h3>Characterize the soft gripper</h3><p>Quan sát biến dạng thật, đặc tính TPU 95A, geometry STL và hành vi khi có tiếp xúc.</p></div><span class="roadmap-deliverable">Output: baseline measurements</span></div>
+        <div class="roadmap-item"><span class="roadmap-index">02</span><div><span class="roadmap-label">MODELING</span><h3>Build a minimal simulation</h3><p>Kiểm tra flex/contact/collision trong MuJoCo; chọn mô hình đủ chính xác cho mục tiêu học.</p></div><span class="roadmap-deliverable">Output: validated sim setup</span></div>
+        <div class="roadmap-item"><span class="roadmap-index">03</span><div><span class="roadmap-label">OBSERVATION</span><h3>Extract internal contour</h3><p>Xây pipeline thị giác nhất quán giữa video thật và ảnh mô phỏng; đo lỗi representation.</p></div><span class="roadmap-deliverable">Output: contour benchmark</span></div>
+        <div class="roadmap-item"><span class="roadmap-index">04</span><div><span class="roadmap-label">LEARNING</span><h3>Train and ablate RL policies</h3><p>So sánh contour-only với các observation baselines, kiểm tra độ bền vững khi đổi tham số vật lý.</p></div><span class="roadmap-deliverable">Output: trained policies + ablations</span></div>
+        <div class="roadmap-item"><span class="roadmap-index">05</span><div><span class="roadmap-label">TRANSFER</span><h3>Measure the reality gap</h3><p>Chạy trên gripper thật, đối chiếu success rate và failure modes; thử adaptation nếu cần.</p></div><span class="roadmap-deliverable">Output: sim-to-real evaluation</span></div>
+      </div>
+    </section>
+
+    <section class="section journal-section" id="journal" aria-labelledby="journal-title">
+      <div class="shell journal-layout"><div><span class="section-kicker">06 / A PRACTICAL RESEARCH HABIT</span><h2 id="journal-title">Think. Read.<br><em>Question. Test.</em></h2><p>Website này nên phát triển như một cuốn sổ nghiên cứu mở. Mỗi paper, mỗi quyết định thiết kế và mỗi thí nghiệm đều dẫn về câu hỏi nghiên cứu ban đầu.</p></div><div class="journal-card"><span class="journal-top">HOW TO WRITE A USEFUL NOTE <span>↗</span></span><ol><li><b>Problem</b><span>Paper muốn giải quyết vấn đề nào?</span></li><li><b>Method</b><span>Ý tưởng / thuật toán trung tâm là gì?</span></li><li><b>Evidence</b><span>Tác giả chứng minh bằng thí nghiệm nào?</span></li><li><b>Limitation</b><span>Giới hạn nào được thừa nhận hoặc cần kiểm tra?</span></li><li><b>My next experiment</b><span>Mình sẽ làm gì khác đi sau khi đọc?</span></li></ol></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><div><a href="#home" class="footer-brand">research<span>.</span>compass ↗</a><p>An evolving map of research questions, evidence, and experiments.</p></div><div class="footer-right"><span>STARTER EDITION / 2026</span><span>Designed to evolve with the research.</span><a href="#home">Back to top ↑</a></div></div></footer>
+
+  <dialog class="paper-dialog" id="paper-dialog" aria-labelledby="dialog-title"><div class="dialog-shell"><div class="dialog-top"><span>RESEARCH READING NOTE / <span id="dialog-code">01</span></span><button type="button" class="dialog-close" id="dialog-close" aria-label="Đóng ghi chú">×</button></div><div class="dialog-content"><span class="dialog-category" id="dialog-category"></span><h2 id="dialog-title"></h2><p class="dialog-citation" id="dialog-citation"></p><div class="dialog-notes"><div><h3>01 / Ý tưởng chính</h3><p id="dialog-core"></p></div><div><h3>02 / Liên hệ với nghiên cứu</h3><p id="dialog-relevance"></p></div><div><h3>03 / Giới hạn hoặc câu hỏi còn mở</h3><p id="dialog-limitation"></p></div><div><h3>04 / Thí nghiệm / bước tiếp theo</h3><p id="dialog-experiment"></p></div></div><a id="dialog-link" class="button button-primary dialog-link" href="#" target="_blank" rel="noopener noreferrer">Đọc tài liệu gốc <span aria-hidden="true">↗</span></a></div></div></dialog>
+</body>
+</html>
